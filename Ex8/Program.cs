@@ -25,7 +25,7 @@ while (N <= number)
 {
    if (N % 2 == 0)
    {
-        Console.Write(N + ", ");
+    Console.Write(N + ", ");
    }
    N = N + 1;
 }
