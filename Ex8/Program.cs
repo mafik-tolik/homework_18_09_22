@@ -4,33 +4,30 @@
 
 Console.Clear();
 
-// int N = 2; // в условиях на выходе должны быть чётные числа от 1 до N. 1 - нечетное, поэтому начинать будем с 2. 
+int N = 1;
 
-// Console.WriteLine("Введите целое число от 2 и более:");
-// int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите целое число от 1 и более:");
+int number = Convert.ToInt32(Console.ReadLine());
 
-// while (number < 2)
-// {
-//     Console.WriteLine("Введите целое число от 2 и более:");
-//     number = Convert.ToInt32(Console.ReadLine());
-// }
+while (number < 1)
+{
+    Console.WriteLine("Введите целое число от 1 и более:");
+    number = Convert.ToInt32(Console.ReadLine());
+}
 
-// //---------------
+while (number == 1)
+{
+    Console.WriteLine("В этом диапазоне нет целых четных чисел. Попробуйте ввести другое целое число:");
+    number = Convert.ToInt32(Console.ReadLine());
+}
 
-// while (N <= number)
-// {
-//    Console.Write(N + ", ");
-//    N = N + 1;
-// }
-// Console.Write("\b\b");
-// Console.WriteLine();
-
-
-double a = 7;
-double b = 2;
-
-double prim1 = a / b;
-double prim2 = a%b;
-
-Console.WriteLine("prim1 = " + prim1);
-Console.WriteLine("prim2 = " + prim2);
+while (N <= number)
+{
+   if (N % 2 == 0)
+   {
+        Console.Write(N + ", ");
+   }
+   N = N + 1;
+}
+Console.Write("\b\b");
+Console.WriteLine();
